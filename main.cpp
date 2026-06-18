@@ -64,7 +64,7 @@ public:
 
             switch (choice) {
                 case 1:
-                    system("cls");
+                    system("clear");
                     player->attackTarget(&currentEnemy);
                     break;
                 
@@ -102,7 +102,7 @@ public:
                     } else if (itemChoice > 0 && itemChoice <= player->inventory.size()) {
                         Item* selectedItem = player->inventory[itemChoice -1];
                         
-                        system("cls");
+                        system("clear");
                         if (selectedItem->name == "Grenade") {
                             selectedItem->use(&currentEnemy);
                         } else {
@@ -154,7 +154,7 @@ public:
 
             switch (choice) {
                 case 1:
-                    system("cls");
+                    system("clear");
                     battle();
                     break;
                 case 2:
